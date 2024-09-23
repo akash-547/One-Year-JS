@@ -17,12 +17,26 @@
 // Day four
 // Question 4: Write a JavaScript program that takes two numbers as input and compares them. If the first number is greater, it should display "First number is greater." If the second number is greater, it should display "Second number is greater." If both are equal, it should display "Both numbers are equal."
 
-let fistNumber =100;
-let secondNumber = 500;
-if (fistNumber > secondNumber){
-    console.log("first number is great")
-}else if(secondNumber>fistNumber){
-    console.log("second Number is greater")
-}else{
-    console.log("both numbers are equal")
+// let fistNumber =100;
+// let secondNumber = 500;
+// if (fistNumber > secondNumber){
+//     console.log("first number is great")
+// }else if(secondNumber>fistNumber){
+//     console.log("second Number is greater")
+// }else{
+//     console.log("both numbers are equal")
+// }
+
+//Question 5: Write a JavaScript program that takes an array of numbers and finds the largest number in the array. Display the largest number in the console.
+
+let numArr=[10,99,20,100,15,300]
+let largestNumber=Math.max(...numArr);
+console.log(largestNumber)
+
+//Question 6: Write a JavaScript program that uses a for loop to print all the numbers from 1 to 10 in the console.
+let num=0;
+for(i=1;i<=10;i++){
+    num+=i;
+    console.log(i)
 }
+
