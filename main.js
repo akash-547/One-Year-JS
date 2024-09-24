@@ -29,14 +29,19 @@
 
 //Question 5: Write a JavaScript program that takes an array of numbers and finds the largest number in the array. Display the largest number in the console.
 
-let numArr=[10,99,20,100,15,300]
-let largestNumber=Math.max(...numArr);
-console.log(largestNumber)
+// let numArr=[10,99,20,100,15,300]
+// let largestNumber=Math.max(...numArr);
+// console.log(largestNumber)
 
-//Question 6: Write a JavaScript program that uses a for loop to print all the numbers from 1 to 10 in the console.
-let num=0;
-for(i=1;i<=10;i++){
-    num+=i;
-    console.log(i)
+// //Question 6: Write a JavaScript program that uses a for loop to print all the numbers from 1 to 10 in the console.
+
+// for(i=1;i<=10;i++){
+//     console.log(i)
+// }
+
+// question7 
+//Write a JavaScript program that takes a number as input and prints its multiplication table up to 10.
+let num=2 ;
+for (i=1;i<=10;i++){
+   console.log(num+"*"+i+"="+num*i)
 }
-
