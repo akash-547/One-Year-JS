@@ -41,7 +41,21 @@
 
 // question7 
 //Write a JavaScript program that takes a number as input and prints its multiplication table up to 10.
-let num=2 ;
-for (i=1;i<=10;i++){
-   console.log(num+"*"+i+"="+num*i)
-}
+// let num=2 ;
+// for (i=1;i<=10;i++){
+//    console.log(num+"*"+i+"="+num*i)
+// }   
+
+//Question 8: Write a JavaScript program that calculates the sum of all numbers from 1 to a given number (for example, from 1 to 100).
+// let sum=0;
+// for (i=1;i<=100;i++){
+//     sum+=i;
+//     console.log("the total sum is "+sum)
+// }
+
+//Question 9: Write a JavaScript program that reverses a string entered by the user.
+let string="hello";
+let reversestr=string.split("").reverse().join("");
+console.log(reversestr)
+//JavaScript String split()
+// A string can be converted to an array with the split() method:
