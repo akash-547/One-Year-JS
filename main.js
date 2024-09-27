@@ -54,8 +54,25 @@
 // }
 
 //Question 9: Write a JavaScript program that reverses a string entered by the user.
-let string="hello";
-let reversestr=string.split("").reverse().join("");
-console.log(reversestr)
+// let string="hello world";
+// let reversestr=string.split("").reverse().join("");
+// console.log(reversestr)
 //JavaScript String split()
 // A string can be converted to an array with the split() method:
+
+//Question 10: Write a JavaScript program that checks if a given number is a prime number or not.
+let number = 5;
+let isPrime = true;  // Assume the number is prime
+
+for (let i = 2; i < number; i++) {
+    if (number % i === 0) {  // If number is divisible by i, it's not prime
+        isPrime = false;
+        break;  // Exit the loop since it's not prime
+    }
+}
+
+if (isPrime) {
+    console.log("Number is prime");
+} else {
+    console.log("Number is not prime");
+}
