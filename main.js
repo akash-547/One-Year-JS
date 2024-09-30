@@ -61,18 +61,26 @@
 // A string can be converted to an array with the split() method:
 
 //Question 10: Write a JavaScript program that checks if a given number is a prime number or not.
-let number = 5;
-let isPrime = true;  // Assume the number is prime
+// let number = 5;
+// let isPrime = true;  // Assume the number is prime
 
-for (let i = 2; i < number; i++) {
-    if (number % i === 0) {  // If number is divisible by i, it's not prime
-        isPrime = false;
-        break;  // Exit the loop since it's not prime
+// for (let i = 2; i < number; i++) {
+//     if (number % i === 0) {  // If number is divisible by i, it's not prime
+//         isPrime = false;
+//         break;  // Exit the loop since it's not prime
+//     }
+// }
+
+// if (isPrime) {
+//     console.log("Number is prime");
+// } else {
+//     console.log("Number is not prime");
+// }
+
+//Question 11: Write a JavaScript program that takes an array of numbers and prints out only the even numbers.
+let num=[2,3,6,7,20,30];
+for(i=0;i<num.length;i++){
+    if(num[i]%2==0){
+        console.log("evens=",num[i])
     }
-}
-
-if (isPrime) {
-    console.log("Number is prime");
-} else {
-    console.log("Number is not prime");
 }
