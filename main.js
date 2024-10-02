@@ -78,9 +78,17 @@
 // }
 
 //Question 11: Write a JavaScript program that takes an array of numbers and prints out only the even numbers.
-let num=[2,3,6,7,20,30];
-for(i=0;i<num.length;i++){
-    if(num[i]%2==0){
-        console.log("evens=",num[i])
-    }
+// let num=[2,3,6,7,20,30];
+// for(i=0;i<num.length;i++){
+//     if(num[i]%2==0){
+//         console.log("evens=",num[i])
+//     }
+// }
+
+//Question 12: Write a JavaScript program that takes an array of numbers and finds the sum of all the numbers in the array.
+let arrNums=[1,2,3,4,5,6];
+let sum=0;
+for (i=0;i<arrNums.length;i++){
+    sum+=arrNums[i];
 }
+console.log("the total sum is",sum);
