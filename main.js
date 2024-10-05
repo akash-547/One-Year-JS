@@ -86,9 +86,15 @@
 // }
 
 //Question 12: Write a JavaScript program that takes an array of numbers and finds the sum of all the numbers in the array.
-let arrNums=[1,2,3,4,5,6];
-let sum=0;
-for (i=0;i<arrNums.length;i++){
-    sum+=arrNums[i];
+// let arrNums=[1,2,3,4,5,6];
+// let sum=0;
+// for (i=0;i<arrNums.length;i++){
+//     sum+=arrNums[i];
+// }
+// console.log("the total sum is",sum);
+
+//Question 13: Write a JavaScript program that takes a number from the user and prints the multiplication table of that number (up to 10).
+let num =2;
+for (i=1;i<=10;i++){
+   console.log(num+"*"+i+"="+num*i)
 }
-console.log("the total sum is",sum);
