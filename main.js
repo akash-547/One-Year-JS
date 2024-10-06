@@ -94,7 +94,15 @@
 // console.log("the total sum is",sum);
 
 //Question 13: Write a JavaScript program that takes a number from the user and prints the multiplication table of that number (up to 10).
-let num =2;
-for (i=1;i<=10;i++){
-   console.log(num+"*"+i+"="+num*i)
+// let num =2;
+// for (i=1;i<=10;i++){
+//    console.log(num+"*"+i+"="+num*i)
+// }
+
+//Write a JavaScript program that takes an array of numbers and prints out only the odd numbers.
+let num=[2,3,4,6,5,7,9];
+for (i=0;i<num.length;i++){
+   if(num[i]%2!==0){
+      console.log("odds numbers ",num[i])
+   }
 }
