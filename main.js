@@ -100,9 +100,17 @@
 // }
 
 //Write a JavaScript program that takes an array of numbers and prints out only the odd numbers.
-let num=[2,3,4,6,5,7,9];
-for (i=0;i<num.length;i++){
-   if(num[i]%2!==0){
-      console.log("odds numbers ",num[i])
-   }
+// let num=[2,3,4,6,5,7,9];
+// for (i=0;i<num.length;i++){
+//    if(num[i]%2!==0){
+//       console.log("odds numbers ",num[i])
+//    }
+// }
+
+//Question 15: Write a JavaScript program that finds the factorial of a given number.
+let num =5;
+let fact=1;
+for (i=1;i<=num;i++){
+   fact*=i;
 }
+console.log("the number",num,"the fatorial is ",fact)
