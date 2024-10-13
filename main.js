@@ -108,9 +108,22 @@
 // }
 
 //Question 15: Write a JavaScript program that finds the factorial of a given number.
-let num =5;
-let fact=1;
-for (i=1;i<=num;i++){
-   fact*=i;
-}
-console.log("the number",num,"the fatorial is ",fact)
+// let num =5;
+// let fact=1;
+// for (i=1;i<=num;i++){
+//    fact*=i;
+// }
+// console.log("the number",num,"the fatorial is ",fact)
+
+//Question 16: Write a JavaScript program that takes a string and counts how many vowels (a, e, i, o, u) it contains.
+
+let vowels="kashhussain";
+let counts=0;
+for(i=0;i<vowels.length;i++){
+   if(vowels[i]==="a"||vowels[i]==="e"||vowels[i]==="i"||vowels[i]==="o"||vowels[i]==="u"){
+      counts++;
+      
+   };
+
+};
+console.log("Total number of vowels:", counts); 
