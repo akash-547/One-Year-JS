@@ -129,9 +129,16 @@
 // console.log("Total number of vowels:", counts); 
 
 //Question 17: Write a JavaScript program that takes an array of numbers and prints out only the even numbers.
-let arr=[2,9,17,4,7,6,10];
-for(i=0;i<arr.length;i++){
-    if(arr[i]%2===0){
-        console.log("evens",arr[i])
-    }
-}
+// let arr=[2,9,17,4,7,6,10];
+// for(i=0;i<arr.length;i++){
+//     if(arr[i]%2===0){
+//         console.log("evens",arr[i])
+//     }
+// }
+
+let numsArr=[1,2,3,4,5,6];
+let sum=0;
+for(i=0;i<numsArr.length;i++){
+    sum+=numsArr[i];
+};
+console.log("the total sum is",sum);
