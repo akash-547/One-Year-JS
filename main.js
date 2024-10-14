@@ -117,13 +117,21 @@
 
 //Question 16: Write a JavaScript program that takes a string and counts how many vowels (a, e, i, o, u) it contains.
 
-let vowels="kashhussain";
-let counts=0;
-for(i=0;i<vowels.length;i++){
-   if(vowels[i]==="a"||vowels[i]==="e"||vowels[i]==="i"||vowels[i]==="o"||vowels[i]==="u"){
-      counts++;
+// let vowels="kashhussain";
+// let counts=0;
+// for(i=0;i<vowels.length;i++){
+//    if(vowels[i]==="a"||vowels[i]==="e"||vowels[i]==="i"||vowels[i]==="o"||vowels[i]==="u"){
+//       counts++;
       
-   };
+//    };
 
-};
-console.log("Total number of vowels:", counts); 
+// };
+// console.log("Total number of vowels:", counts); 
+
+//Question 17: Write a JavaScript program that takes an array of numbers and prints out only the even numbers.
+let arr=[2,9,17,4,7,6,10];
+for(i=0;i<arr.length;i++){
+    if(arr[i]%2===0){
+        console.log("evens",arr[i])
+    }
+}
