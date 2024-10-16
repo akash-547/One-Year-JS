@@ -144,10 +144,10 @@
 // console.log("the total sum is",sum);
 
 //Question 19: Write a JavaScript program that takes a string and checks whether it is a palindrome (reads the same forwards and backwards).
- let string="madam";
- let reverseStr=string.split("").reverse().join("");
- if(string===reverseStr){
+let str="madam";
+let reverse=str.split("").reverse().join("");
+if(str===reverse){
     console.log("palindrome")
- }else{
-    console.log("not palindrome")
- }
+}else{
+    console.log("not a palindrome")
+}
