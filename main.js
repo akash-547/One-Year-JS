@@ -136,9 +136,18 @@
 //     }
 // }
 
-let numsArr=[1,2,3,4,5,6];
-let sum=0;
-for(i=0;i<numsArr.length;i++){
-    sum+=numsArr[i];
-};
-console.log("the total sum is",sum);
+// let numsArr=[1,2,3,4,5,6];
+// let sum=0;
+// for(i=0;i<numsArr.length;i++){
+//     sum+=numsArr[i];
+// };
+// console.log("the total sum is",sum);
+
+//Question 19: Write a JavaScript program that takes a string and checks whether it is a palindrome (reads the same forwards and backwards).
+ let string="madam";
+ let reverseStr=string.split("").reverse().join("");
+ if(string===reverseStr){
+    console.log("palindrome")
+ }else{
+    console.log("not palindrome")
+ }
