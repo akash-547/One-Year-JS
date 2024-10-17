@@ -143,11 +143,21 @@
 // };
 // console.log("the total sum is",sum);
 
-//Question 19: Write a JavaScript program that takes a string and checks whether it is a palindrome (reads the same forwards and backwards).
-let str="madam";
-let reverse=str.split("").reverse().join("");
-if(str===reverse){
-    console.log("palindrome")
-}else{
-    console.log("not a palindrome")
+// //Question 19: Write a JavaScript program that takes a string and checks whether it is a palindrome (reads the same forwards and backwards).
+// let str="madam";
+// let reverse=str.split("").reverse().join("");
+// if(str===reverse){
+//     console.log("palindrome")
+// }else{
+//     console.log("not a palindrome")
+// }
+
+//Question 20: Write a JavaScript program that finds the smallest number in an array of numbers.
+let arr=[2,7,8,5,36,10,0.5];
+let smallest=arr[0];
+for(i=0;i<arr.length;i++){
+    if(arr[i]<smallest){
+        smallest=arr[i];
+    }
 }
+console.log("the smallest number is",smallest)
