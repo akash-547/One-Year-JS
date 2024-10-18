@@ -153,11 +153,22 @@
 // }
 
 //Question 20: Write a JavaScript program that finds the smallest number in an array of numbers.
-let arr=[2,7,8,5,36,10,0.5];
-let smallest=arr[0];
-for(i=0;i<arr.length;i++){
-    if(arr[i]<smallest){
-        smallest=arr[i];
+// let arr=[2,7,8,5,36,10,0.5];
+// let smallest=arr[0];
+// for(i=0;i<arr.length;i++){
+//     if(arr[i]<smallest){
+//         smallest=arr[i];
+//     }
+// }
+// console.log("the smallest number is",smallest)
+
+
+//Question 21: Write a JavaScript program that counts how many times a specific element appears in an array. For example, given the array [2, 3, 4, 3, 5, 3, 6], count how many times the number 3 appears.
+let array=[1,2,4,2,45,7,2,2];
+let count=0;
+for (i=0;i<array.length;i++){
+    if(array[i]==2){
+        count++;
     }
-}
-console.log("the smallest number is",smallest)
+};
+console.log("the count is",count)
