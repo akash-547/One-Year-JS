@@ -164,11 +164,19 @@
 
 
 //Question 21: Write a JavaScript program that counts how many times a specific element appears in an array. For example, given the array [2, 3, 4, 3, 5, 3, 6], count how many times the number 3 appears.
-let array=[1,2,4,2,45,7,2,2];
-let count=0;
-for (i=0;i<array.length;i++){
-    if(array[i]==2){
-        count++;
+// let array=[1,2,4,2,45,7,2,2];
+// let count=0;
+// for (i=0;i<array.length;i++){
+//     if(array[i]==2){
+//         count++;
+//     }
+// };
+// console.log("the count is",count)
+
+let array=[1,2,4,31,6,6,20];
+for(i=0;i<array.length;i++){
+    
+    if(array[i]%2==0){
+        console.log("even numbers",array[i])
     }
-};
-console.log("the count is",count)
+}
