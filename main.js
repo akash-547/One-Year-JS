@@ -173,10 +173,20 @@
 // };
 // console.log("the count is",count)
 
-let array=[1,2,4,31,6,6,20];
-for(i=0;i<array.length;i++){
+// let array=[1,2,4,31,6,6,20];
+// for(i=0;i<array.length;i++){
     
-    if(array[i]%2==0){
-        console.log("even numbers",array[i])
-    }
-}
+//     if(array[i]%2==0){
+//         console.log("even numbers",array[i])
+//     }
+// }
+
+//Question 23: Write a JavaScript program that finds the sum of all odd numbers in an array. For example, given the array [1, 2, 3, 4, 5, 6, 7], the program should calculate the sum of odd numbers (1, 3, 5, 7).
+let oddNums=[1,2,3,4,5,7,8];
+let sum=0;
+for (i=0;i<oddNums.length;i++){
+    if(oddNums[i]%2!==0){
+        sum+=oddNums[i];
+    };
+};
+console.log('the total odd Numbers sum is',sum)
