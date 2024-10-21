@@ -182,11 +182,21 @@
 // }
 
 //Question 23: Write a JavaScript program that finds the sum of all odd numbers in an array. For example, given the array [1, 2, 3, 4, 5, 6, 7], the program should calculate the sum of odd numbers (1, 3, 5, 7).
-let oddNums=[1,2,3,4,5,7,8];
-let sum=0;
-for (i=0;i<oddNums.length;i++){
-    if(oddNums[i]%2!==0){
-        sum+=oddNums[i];
-    };
-};
-console.log('the total odd Numbers sum is',sum)
+// let oddNums=[1,2,3,4,5,7,8];
+// let sum=0;
+// for (i=0;i<oddNums.length;i++){
+//     if(oddNums[i]%2!==0){
+//         sum+=oddNums[i];
+//     };
+// };
+// console.log('the total odd Numbers sum is',sum)
+
+//Question 24: Write a JavaScript program that checks if a number is a palindrome. A palindrome is a number that remains the same when its digits are reversed (e.g., 121, 1331).
+let num = 10221;
+let reverseNum = num.toString().split("").reverse().join("");
+
+if (num.toString() === reverseNum) {
+    console.log("Palindrome", reverseNum);
+} else {
+    console.log("Not palindrome", reverseNum);
+}
