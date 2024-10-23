@@ -192,11 +192,23 @@
 // console.log('the total odd Numbers sum is',sum)
 
 //Question 24: Write a JavaScript program that checks if a number is a palindrome. A palindrome is a number that remains the same when its digits are reversed (e.g., 121, 1331).
-let num = 10221;
-let reverseNum = num.toString().split("").reverse().join("");
+// let num = 10221;
+// let reverseNum = num.toString().split("").reverse().join("");
 
-if (num.toString() === reverseNum) {
-    console.log("Palindrome", reverseNum);
-} else {
-    console.log("Not palindrome", reverseNum);
+// if (num.toString() === reverseNum) {
+//     console.log("Palindrome", reverseNum);
+// } else {
+//     console.log("Not palindrome", reverseNum);
+// }
+
+//Question 25: Write a JavaScript program that finds the largest number in a 2D array (an array of arrays). For example, given the 2D array [[3, 5, 1], [8, 2, 9], [4, 7, 6]], the program should find and print the largest number (9).
+let array=[[1,2,3],[4,5,6],[7,8,9]];
+let largest=array[0][0];
+for(i=0;i<array.length;i++){
+    for(j=0;j<array[i].length;j++){
+        if(array[i][j]>largest){
+            largest=array[i][j];
+        }
+    }
 }
+console.log("the largest number is",largest)
