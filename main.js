@@ -202,13 +202,23 @@
 // }
 
 //Question 25: Write a JavaScript program that finds the largest number in a 2D array (an array of arrays). For example, given the 2D array [[3, 5, 1], [8, 2, 9], [4, 7, 6]], the program should find and print the largest number (9).
-let array=[[1,2,3],[4,5,6],[7,8,9]];
-let largest=array[0][0];
+// let array=[[1,2,3],[4,5,6],[7,8,9]];
+// let largest=array[0][0];
+// for(i=0;i<array.length;i++){
+//     for(j=0;j<array[i].length;j++){
+//         if(array[i][j]>largest){
+//             largest=array[i][j];
+//         }
+//     }
+// }
+// console.log("the largest number is",largest)
+
+//Question 26: Write a JavaScript program that removes all duplicate elements from an array. For example, given the array [1, 2, 3, 2, 4, 1, 5], the program should return an array with only unique elements: [1, 2, 3, 4, 5].
+let array=[1,2,3,2,4,1,5];
+let newArray=[];
 for(i=0;i<array.length;i++){
-    for(j=0;j<array[i].length;j++){
-        if(array[i][j]>largest){
-            largest=array[i][j];
-        }
+    if(!newArray.includes(array[i])){
+        newArray.push(array[i]);
     }
 }
-console.log("the largest number is",largest)
+console.log(newArray)
