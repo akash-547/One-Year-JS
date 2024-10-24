@@ -214,11 +214,25 @@
 // console.log("the largest number is",largest)
 
 //Question 26: Write a JavaScript program that removes all duplicate elements from an array. For example, given the array [1, 2, 3, 2, 4, 1, 5], the program should return an array with only unique elements: [1, 2, 3, 4, 5].
-let array=[1,2,3,2,4,1,5];
-let newArray=[];
+    // let array=[1,2,3,2,4,1,5];
+    // let newArray=[];
+    // for(i=0;i<array.length;i++){
+    //     if(!newArray.includes(array[i])){
+    //         newArray.push(array[i]);
+    //     }
+    // }
+    // console.log(newArray)
+
+    //Question 27: Write a JavaScript program that finds the second largest number in an array. For example, given the array [10, 5, 8, 20, 15], the program should return 15 (the second largest number after 20).
+let array=[10,5,8,20,15];
+let largest=array[0];
+let secondLargest=array[0];
 for(i=0;i<array.length;i++){
-    if(!newArray.includes(array[i])){
-        newArray.push(array[i]);
+    if(array[i]>largest){
+        secondLargest=largest;
+        largest=array[i];
+    }else if(array[i]<largest && array[i]>secondLargest){
+        secondLargest=array[i];
     }
 }
-console.log(newArray)
+console.log("the second largest number is",secondLargest)
