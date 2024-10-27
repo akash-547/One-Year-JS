@@ -224,15 +224,23 @@
     // console.log(newArray)
 
     //Question 27: Write a JavaScript program that finds the second largest number in an array. For example, given the array [10, 5, 8, 20, 15], the program should return 15 (the second largest number after 20).
-let array=[10,5,8,20,15];
-let largest=array[0];
-let secondLargest=array[0];
+// let array=[10,5,8,20,15];
+// let largest=array[0];
+// let secondLargest=array[0];
+// for(i=0;i<array.length;i++){
+//     if(array[i]>largest){
+//         secondLargest=largest;
+//         largest=array[i];
+//     }else if(array[i]<largest && array[i]>secondLargest){
+//         secondLargest=array[i];
+//     }
+// }
+// console.log("the second largest number is",secondLargest)
+
+//Question 28: Write a JavaScript program that takes an array of numbers and returns a new array with each number doubled. For example, given the array [1, 2, 3, 4], the program should return [2, 4, 6, 8].
+let array= [2,4,6,16];
+let newArray=[];
 for(i=0;i<array.length;i++){
-    if(array[i]>largest){
-        secondLargest=largest;
-        largest=array[i];
-    }else if(array[i]<largest && array[i]>secondLargest){
-        secondLargest=array[i];
-    }
+    newArray.push(array[i]*2);  
 }
-console.log("the second largest number is",secondLargest)
+console.log(newArray)
