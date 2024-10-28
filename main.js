@@ -238,9 +238,18 @@
 // console.log("the second largest number is",secondLargest)
 
 //Question 28: Write a JavaScript program that takes an array of numbers and returns a new array with each number doubled. For example, given the array [1, 2, 3, 4], the program should return [2, 4, 6, 8].
-let array= [2,4,6,16];
-let newArray=[];
+// let array= [2,4,6,16];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     newArray.push(array[i]*2);  
+// }
+// console.log(newArray)
+
+//Question 29: Write a JavaScript program that replaces all negative numbers in an array with zero. For example, given the array [3, -1, 2, -7, 5, -3], the program should modify the array to [3, 0, 2, 0, 5, 0].
+let array=[3,-1,2,-7,5,-3];
 for(i=0;i<array.length;i++){
-    newArray.push(array[i]*2);  
+    if(array[i]<0){
+        array[i]=0;
+    }
 }
-console.log(newArray)
+console.log(array)
