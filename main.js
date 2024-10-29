@@ -246,10 +246,21 @@
 // console.log(newArray)
 
 //Question 29: Write a JavaScript program that replaces all negative numbers in an array with zero. For example, given the array [3, -1, 2, -7, 5, -3], the program should modify the array to [3, 0, 2, 0, 5, 0].
-let array=[3,-1,2,-7,5,-3];
-for(i=0;i<array.length;i++){
-    if(array[i]<0){
-        array[i]=0;
+// let array=[3,-1,2,-7,5,-3];
+// for(i=0;i<array.length;i++){
+//     if(array[i]<0){
+//         array[i]=0;
+//     }
+// }
+// console.log(array)
+
+//Question 30: Write a JavaScript program that counts the number of vowels (a, e, i, o, u) in a given string. For example, given the string "hello world", the program should count and return 3 vowels.
+let str="kash hussain";
+let count=0;
+for(i=0;i<str.length;i++){
+    if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+        count++;
     }
+   
 }
-console.log(array)
+console.log("the total number of vowels is",count)
