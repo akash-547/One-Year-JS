@@ -255,12 +255,22 @@
 // console.log(array)
 
 //Question 30: Write a JavaScript program that counts the number of vowels (a, e, i, o, u) in a given string. For example, given the string "hello world", the program should count and return 3 vowels.
-let str="kash hussain";
-let count=0;
-for(i=0;i<str.length;i++){
-    if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
-        count++;
-    };
+// let str="kash hussain";
+// let count=0;
+// for(i=0;i<str.length;i++){
+//     if(str[i]=="a" || str[i]=="e" || str[i]=="i" || str[i]=="o" || str[i]=="u"){
+//         count++;
+//     };
    
-};
-console.log(count);
+// };
+// console.log(count);
+
+//Question 31: Write a JavaScript program that removes all falsy values from an array. Falsy values in JavaScript are values that evaluate to false when converted to a Boolean, including 0, "" (empty string), null, undefined, NaN, and false. For example, given the array [0, "hello", false, "", 42, null, "world", undefined, NaN], the program should return ["hello", 42, "world"].
+let array=[0,"hello",false,"",42,null,"world",undefined,NaN];
+let newArray=[];
+for(i=0;i<array.length;i++){
+    if(array[i]){
+        newArray.push(array[i]);
+    }
+}
+console.log(newArray)
