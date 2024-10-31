@@ -266,11 +266,21 @@
 // console.log(count);
 
 //Question 31: Write a JavaScript program that removes all falsy values from an array. Falsy values in JavaScript are values that evaluate to false when converted to a Boolean, including 0, "" (empty string), null, undefined, NaN, and false. For example, given the array [0, "hello", false, "", 42, null, "world", undefined, NaN], the program should return ["hello", 42, "world"].
-let array=[0,"hello",false,"",42,null,"world",undefined,NaN];
-let newArray=[];
-for(i=0;i<array.length;i++){
-    if(array[i]){
-        newArray.push(array[i]);
-    }
-}
-console.log(newArray)
+// let array=[0,"hello",false,"",42,null,"world",undefined,NaN];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(array[i]){
+//         newArray.push(array[i]);
+//     }
+// }
+// console.log(newArray)
+
+//Question 32: Write a JavaScript program that finds the sum of all even numbers in an array. For example, given the array [1, 2, 3, 4, 5, 6], the program should return 12 (since 2 + 4 + 6 = 12).
+let numbers=[1,2,3,4,5,6,6];
+let sum=0;
+for(i=0;i<numbers.length;i++){
+    if(numbers[i]%2==0){
+        sum+=numbers[i];
+    };
+};
+console.log("the sum of evens numbers",sum)
