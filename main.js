@@ -276,11 +276,26 @@
 // console.log(newArray)
 
 //Question 32: Write a JavaScript program that finds the sum of all even numbers in an array. For example, given the array [1, 2, 3, 4, 5, 6], the program should return 12 (since 2 + 4 + 6 = 12).
-let numbers=[1,2,3,4,5,6,6];
-let sum=0;
-for(i=0;i<numbers.length;i++){
-    if(numbers[i]%2==0){
-        sum+=numbers[i];
-    };
+// let numbers=[1,2,3,4,5,6,6];
+// let sum=0;
+// for(i=0;i<numbers.length;i++){
+//     if(numbers[i]%2==0){
+//         sum+=numbers[i];
+//     };
+// };
+// console.log("the sum of evens numbers",sum)
+
+//Question 33: Write a JavaScript program that finds the difference between the largest and smallest numbers in an array. For example, given the array [3, 7, 2, 9, 5], the program should return 7 (since 9 - 2 = 7).
+let arry=[3,7,2,9,5];
+let largest=arry[0];
+let smallest=arry[0];
+for(i=0;i<arry.length;i++){
+    if(arry[i]>largest){
+        largest=arry[i];
+    }else if(arry[i]<smallest){
+        smallest=arry[i];
+    }
 };
-console.log("the sum of evens numbers",sum)
+console.log("the largest number is",largest);
+console.log("the smallest number is",smallest);
+console.log("the difference is",largest-smallest);
