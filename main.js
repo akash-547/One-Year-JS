@@ -301,6 +301,16 @@
 // console.log("the difference is",largest-smallest);
 
 //Question 34: Write a JavaScript program that reverses the words in a given sentence. For example, given the string "JavaScript is fun", the program should output "fun is JavaScript".
-let str ="javascript is fun";
-let reverseStr=str.split(" ").reverse().join(" ");
-console.log(reverseStr);
+// let str ="javascript is fun";
+// let reverseStr=str.split(" ").reverse().join(" ");
+// console.log(reverseStr);
+
+//Question 35: Write a JavaScript program that removes all duplicate values from an array. For example, given the array [1, 2, 2, 3, 4, 4, 5], the program should return [1, 2, 3, 4, 5].
+let array =[1,2,2,3,4,4,5];
+let newArray=[];
+for(i=0;i<array.length;i++){
+    if(newArray.indexOf(array[i])===-1){
+        newArray.push(array[i]);
+    };
+};
+console.log(newArray);
