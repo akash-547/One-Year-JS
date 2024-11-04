@@ -306,11 +306,25 @@
 // console.log(reverseStr);
 
 //Question 35: Write a JavaScript program that removes all duplicate values from an array. For example, given the array [1, 2, 2, 3, 4, 4, 5], the program should return [1, 2, 3, 4, 5].
-let array =[1,2,2,3,4,4,5];
-let newArray=[];
-for(i=0;i<array.length;i++){
-    if(newArray.indexOf(array[i])===-1){
-        newArray.push(array[i]);
-    };
-};
-console.log(newArray);
+// let array =[1,2,2,3,4,4,5];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(newArray.indexOf(array[i])===-1){
+//         newArray.push(array[i]);
+//     };
+// };
+// console.log(newArray);
+
+//Question 36: Write a JavaScript program that checks if an array is sorted in ascending order. If the array is sorted, print true; otherwise, print false.
+let array=[1,2,3,4,5,6,7];
+let flag=true;  
+for(i=0;i<array.length-1;i++){
+    if(array[i]>array[i+1]){
+        flag=false;
+    }
+}
+if(flag){
+    console.log("true");
+}else{
+    console.log("false");
+}
