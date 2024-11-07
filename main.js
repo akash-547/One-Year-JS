@@ -316,15 +316,30 @@
 // console.log(newArray);
 
 //Question 36: Write a JavaScript program that checks if an array is sorted in ascending order. If the array is sorted, print true; otherwise, print false.
-let array=[1,2,3,4,5,6,7];
-let flag=true;  
-for(i=0;i<array.length-1;i++){
-    if(array[i]>array[i+1]){
-        flag=false;
+// let array=[1,2,3,4,5,6,7];
+// let flag=true;  
+// for(i=0;i<array.length-1;i++){
+//     if(array[i]>array[i+1]){
+//         flag=false;
+//     }
+// }
+// if(flag){
+//     console.log("true");
+// }else{
+//     console.log("false");
+// }
+
+//Question 37: Write a JavaScript program that finds the difference between the largest and smallest numbers in an array. For example, given the array [3, 7, 1, 9, 4], the program should calculate 9 - 1 = 8 and output 8.
+let array=[3,7,1,9,4];
+let largest=array[0];
+let smallest=array[0];
+for(i=0;i<array.length;i++){
+    if(array[i]>largest){
+        largest=array[i];
+    }else if(array[i]<smallest){
+        smallest=array[i];
     }
-}
-if(flag){
-    console.log("true");
-}else{
-    console.log("false");
-}
+};
+console.log("the largest number is",largest);
+console.log("the smallest number is",smallest);
+console.log("the difference is",largest-smallest);
