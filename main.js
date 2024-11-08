@@ -330,16 +330,26 @@
 // }
 
 //Question 37: Write a JavaScript program that finds the difference between the largest and smallest numbers in an array. For example, given the array [3, 7, 1, 9, 4], the program should calculate 9 - 1 = 8 and output 8.
-let array=[3,7,1,9,4];
-let largest=array[0];
-let smallest=array[0];
+// let array=[3,7,1,9,4];
+// let largest=array[0];
+// let smallest=array[0];
+// for(i=0;i<array.length;i++){
+//     if(array[i]>largest){
+//         largest=array[i];
+//     }else if(array[i]<smallest){
+//         smallest=array[i];
+//     };
+// };
+// console.log("the largest number is",largest);
+// console.log("the smallest number is",smallest);
+// console.log("the difference is",largest-smallest);
+
+//Question 38: Write a JavaScript program that filters out all negative numbers from an array. For example, given the array [5, -3, 8, -1, 4, -6], the program should return [5, 8, 4].
+let array =[5,-3,8,-1,4,-6];
+let newArray=[];
 for(i=0;i<array.length;i++){
-    if(array[i]>largest){
-        largest=array[i];
-    }else if(array[i]<smallest){
-        smallest=array[i];
-    }
-};
-console.log("the largest number is",largest);
-console.log("the smallest number is",smallest);
-console.log("the difference is",largest-smallest);
+    if(array[i]>0){
+        newArray.push(array[i]);
+    }   
+}
+console.log(newArray);
