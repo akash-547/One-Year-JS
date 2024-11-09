@@ -357,3 +357,13 @@
 //Question 39: Write a JavaScript program that finds the second largest number in an array. For example, given the array [3, 8, 1, 10, 5], the program should return 8.
 let array =[1,2,3,4,5,6];
 let largest=array[0];
+let secondLargest=array[0];
+for(i=0;i<array.length;i++){
+    if(array[i]>largest){
+        secondLargest=largest;
+        largest=array[i];
+    }else if(array[i]<largest && array[i]>secondLargest){
+        secondLargest=array[i];
+    }
+}
+console.log("the second largest number is",secondLargest)
