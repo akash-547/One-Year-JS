@@ -345,11 +345,15 @@
 // console.log("the difference is",largest-smallest);
 
 //Question 38: Write a JavaScript program that filters out all negative numbers from an array. For example, given the array [5, -3, 8, -1, 4, -6], the program should return [5, 8, 4].
-let array =[5,-3,8,-1,4,-6];
-let newArray=[];
-for(i=0;i<array.length;i++){
-    if(array[i]>0){
-        newArray.push(array[i]);
-    }   
-}
-console.log(newArray);
+// let array =[5,-3,8,-1,4,-6];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(array[i]>0){
+//         newArray.push(array[i]);
+//     }   
+// }
+// console.log(newArray);
+
+//Question 39: Write a JavaScript program that finds the second largest number in an array. For example, given the array [3, 8, 1, 10, 5], the program should return 8.
+let array =[1,2,3,4,5,6];
+let largest=array[0];
