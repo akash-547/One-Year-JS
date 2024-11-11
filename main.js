@@ -369,15 +369,25 @@
 // console.log("the second largest number is",secondLargest)
 
 //Question 40: Write a JavaScript program that counts the number of even and odd numbers in an array. For example, given the array [2, 5, 7, 8, 10], the program should output something like Evens: 3, Odds: 2.
-let array=[2,5,7,8,10];
-let even=0;
-let odd=0;
+// let array=[2,5,7,8,10];
+// let even=0;
+// let odd=0;
+// for(i=0;i<array.length;i++){
+//     if(array[i]%2===0){
+//         even++;
+//     }else{
+//         odd++;
+//     }
+// }
+// console.log("Evens:",even);
+// console.log("Odds:",odd);
+
+//Question 41: Write a JavaScript program that creates a new array containing only the unique elements from an original array. For example, given the array [1, 2, 2, 3, 4, 4, 5], the program should return [1, 2, 3, 4, 5].
+let array=[1,2,2,3,4,4,5];
+let newArray=[];
 for(i=0;i<array.length;i++){
-    if(array[i]%2===0){
-        even++;
-    }else{
-        odd++;
-    }
-}
-console.log("Evens:",even);
-console.log("Odds:",odd);
+    if(newArray.indexOf(array[i])===-1){
+        newArray.push(array[i]);
+    };
+};
+console.log(newArray);
