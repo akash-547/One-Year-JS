@@ -383,11 +383,21 @@
 // console.log("Odds:",odd);
 
 //Question 41: Write a JavaScript program that creates a new array containing only the unique elements from an original array. For example, given the array [1, 2, 2, 3, 4, 4, 5], the program should return [1, 2, 3, 4, 5].
-let array=[1,2,2,3,4,4,5];
+// let array=[1,2,2,3,4,4,5];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(newArray.indexOf(array[i])===-1){
+//         newArray.push(array[i]);
+//     };
+// };
+// console.log(newArray);
+
+//Question 42: Write a JavaScript program that takes an array of numbers and returns an array of only the numbers that are divisible by 3. For example, given [3, 5, 9, 12, 15, 20], the output should be [3, 9, 12, 15].
+let array=[3,5,9,12,15,20];
 let newArray=[];
 for(i=0;i<array.length;i++){
-    if(newArray.indexOf(array[i])===-1){
+    if(array[i]%3===0){
         newArray.push(array[i]);
-    };
-};
+    }
+}
 console.log(newArray);
