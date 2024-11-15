@@ -393,11 +393,20 @@
 // console.log(newArray);
 
 //Question 42: Write a JavaScript program that takes an array of numbers and returns an array of only the numbers that are divisible by 3. For example, given [3, 5, 9, 12, 15, 20], the output should be [3, 9, 12, 15].
-let array=[3,5,9,12,15,20];
-let newArray=[];
-for(i=0;i<array.length;i++){
-    if(array[i]%3===0){
-        newArray.push(array[i]);
-    }
-}
-console.log(newArray);
+// let array=[3,5,9,12,15,20];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(array[i]%3===0){
+//         newArray.push(array[i]);
+//     }
+// }
+// console.log(newArray);
+
+//
+//Question 43: Write a JavaScript program that reverses the order of elements in an array without using the .reverse() method. For example, given [1, 2, 3, 4, 5], the output should be [5, 4, 3, 2, 1].
+ let array=[1,2,3,4,5];
+ let newArray=[];
+ for(i=array.length-1;i>=0;i--){
+     newArray.push(array[i]);
+ }
+ console.log(newArray);
