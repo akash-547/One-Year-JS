@@ -404,9 +404,19 @@
 
 //
 //Question 43: Write a JavaScript program that reverses the order of elements in an array without using the .reverse() method. For example, given [1, 2, 3, 4, 5], the output should be [5, 4, 3, 2, 1].
- let array=[1,2,3,4,5];
- let newArray=[];
- for(i=array.length-1;i>=0;i--){
-     newArray.push(array[i]);
- }
- console.log(newArray);
+//  let array=[1,2,3,4,5];
+//  let newArray=[];
+//  for(i=array.length-1;i>=0;i--){
+//      newArray.push(array[i]);
+//  }
+//  console.log(newArray);
+
+//Question 44: Write a JavaScript program that merges two arrays and removes any duplicate values. For example, given [1, 2, 3] and [2, 3, 4], the output should be [1, 2, 3, 4].
+let array1=[1,2,3];
+let array2=[1,2,3,4,5];
+for(i=0;i<array2.length;i++){
+    if(array1.indexOf(array2[i])===-1){
+        array1.push(array2[i]);
+    }
+}
+console.log(array1);
