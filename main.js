@@ -412,11 +412,21 @@
 //  console.log(newArray);
 
 //Question 44: Write a JavaScript program that merges two arrays and removes any duplicate values. For example, given [1, 2, 3] and [2, 3, 4], the output should be [1, 2, 3, 4].
-let array1=[1,2,3];
-let array2=[1,2,3,4,5];
-for(i=0;i<array2.length;i++){
-    if(array1.indexOf(array2[i])===-1){
-        array1.push(array2[i]);
+// let array1=[1,2,3];
+// let array2=[1,2,3,4,5];
+// for(i=0;i<array2.length;i++){
+//     if(array1.indexOf(array2[i])===-1){
+//         array1.push(array2[i]);
+//     }
+// }
+// console.log(array1);
+
+//Question 45: Write a JavaScript program that counts the number of words in a given string. For example, given the string "JavaScript is awesome", the output should be 3.
+let str="javascript is awesome";
+let count=0;
+for(i=0;i<str.length;i++){
+    if(str[i]===" "){
+        count++;
     }
 }
-console.log(array1);
+console.log(count+1);
