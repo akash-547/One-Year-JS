@@ -422,11 +422,20 @@
 // console.log(array1);
 
 //Question 45: Write a JavaScript program that counts the number of words in a given string. For example, given the string "JavaScript is awesome", the output should be 3.
-let str="javascript is awesome";
-let count=0;
-for(i=0;i<str.length;i++){
-    if(str[i]===" "){
-        count++;
+// let str="javascript is awesome";
+// let count=0;
+// for(i=0;i<str.length;i++){
+//     if(str[i]===" "){
+//         count++;
+//     }
+// }
+// console.log(count+1);
+
+//Question 46: Write a JavaScript program that finds the index of the first occurrence of a specific element in an array. For example, given the array [5, 3, 8, 3, 9] and the element 3, the program should return 1.
+let array=[5,3,8,3,9];
+let element=3;
+for(i=0;i<array.length;i++){
+    if(array[i]===element){
+        console.log(i);
     }
-}
-console.log(count+1);
+}console.log(array.indexOf(element));
