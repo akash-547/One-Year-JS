@@ -432,10 +432,20 @@
 // console.log(count+1);
 
 //Question 46: Write a JavaScript program that finds the index of the first occurrence of a specific element in an array. For example, given the array [5, 3, 8, 3, 9] and the element 3, the program should return 1.
-let array=[5,3,8,3,9];
-let element=3;
+// let array=[5,3,8,3,9];
+// let element=3;
+// for(i=0;i<array.length;i++){
+//     if(array[i]===element){
+//         console.log(i);
+//     }
+// }console.log(array.indexOf(element));
+
+//Question 47: Write a JavaScript program that removes all falsy values from an array. Falsy values in JavaScript are false, 0, "" (empty string), null, undefined, and NaN. For example, given the array [0, 1, false, 2, "", 3, null], the output should be [1, 2, 3].
+let array=[0,1,false,2,"",3,null];
+let newArray=[];
 for(i=0;i<array.length;i++){
-    if(array[i]===element){
-        console.log(i);
+    if(array[i]){
+        newArray.push(array[i]);
     }
-}console.log(array.indexOf(element));
+}
+console.log(newArray);
