@@ -441,11 +441,23 @@
 // }console.log(array.indexOf(element));
 
 //Question 47: Write a JavaScript program that removes all falsy values from an array. Falsy values in JavaScript are false, 0, "" (empty string), null, undefined, and NaN. For example, given the array [0, 1, false, 2, "", 3, null], the output should be [1, 2, 3].
-let array=[0,1,false,2,"",3,null];
+// let array=[0,1,false,2,"",3,null];
+// let newArray=[];
+// for(i=0;i<array.length;i++){
+//     if(array[i]){
+//         newArray.push(array[i]);
+//     }
+// }
+// console.log(newArray);
+
+//Question 48: Write a JavaScript program that capitalizes the first letter of each word in a given string. For example, given the string "javascript is fun", the output should be "Javascript Is Fun".
+let str="javascript is fun";
 let newArray=[];
-for(i=0;i<array.length;i++){
-    if(array[i]){
-        newArray.push(array[i]);
+for(i=0;i<str.length;i++){
+    if(str[i]===" "){
+        newArray.push(str[i]);
+    }else{
+        newArray.push(str[i].toUpperCase());
     }
 }
-console.log(newArray);
+console.log(newArray.join(""));
