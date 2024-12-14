@@ -451,13 +451,28 @@
 // console.log(newArray);
 
 //Question 48: Write a JavaScript program that capitalizes the first letter of each word in a given string. For example, given the string "javascript is fun", the output should be "Javascript Is Fun".
-let str="javascript is fun";
-let newArray=[];
-for(i=0;i<str.length;i++){
-    if(str[i]===" "){
-        newArray.push(str[i]);
-    }else{
-        newArray.push(str[i].toUpperCase());
+// let str="javascript is fun";
+// let newArray=[];
+// for(i=0;i<str.length;i++){
+//     if(str[i]===" "){
+//         newArray.push(str[i]);
+//     }else{
+//         newArray.push(str[i].toUpperCase());
+//     }
+// }
+// console.log(newArray.join(""));
+
+
+//Question 49: Write a JavaScript program that checks if a given array is sorted in ascending order. For example, the array [1, 2, 3, 4, 5] is sorted, but [3, 2, 5, 4] is not.
+let array =[1,2,3,4,5];
+let flag=true;  
+for(i=0;i<array.length-1;i++){
+    if(array[i]>array[i+1]){
+        flag=false;
     }
 }
-console.log(newArray.join(""));
+if(flag){
+    console.log("true");
+}else{
+    console.log("false");
+}
