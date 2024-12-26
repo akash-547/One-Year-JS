@@ -464,15 +464,29 @@
 
 
 //Question 49: Write a JavaScript program that checks if a given array is sorted in ascending order. For example, the array [1, 2, 3, 4, 5] is sorted, but [3, 2, 5, 4] is not.
-let array =[1,2,3,4,5];
-let flag=true;  
-for(i=0;i<array.length-1;i++){
-    if(array[i]>array[i+1]){
-        flag=false;
+// let array =[1,2,3,4,5];
+// let flag=true;  
+// for(i=0;i<array.length-1;i++){
+//     if(array[i]>array[i+1]){
+//         flag=false;
+//     }
+// }
+// if(flag){
+//     console.log("true");
+// }else{
+//     console.log("false");
+// }
+
+//Question 50: Write a JavaScript program that finds the second largest number in an array. For example, given the array [10, 20, 5, 15, 30], the output should be 20.
+let array=[10,20,5,15,30];
+let largest=array[0];
+let secondLargest=array[0];
+for(i=0;i<array.length;i++){
+    if(array[i]>largest){
+        secondLargest=largest;
+        largest=array[i];
+    }else if(array[i]<largest && array[i]>secondLargest){
+        secondLargest=array[i];
     }
 }
-if(flag){
-    console.log("true");
-}else{
-    console.log("false");
-}
+console.log("the second largest number is",secondLargest);
