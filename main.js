@@ -478,15 +478,31 @@
 // }
 
 //Question 50: Write a JavaScript program that finds the second largest number in an array. For example, given the array [10, 20, 5, 15, 30], the output should be 20.
-let array=[10,20,5,15,30];
-let largest=array[0];
-let secondLargest=array[0];
-for(i=0;i<array.length;i++){
-    if(array[i]>largest){
-        secondLargest=largest;
-        largest=array[i];
-    }else if(array[i]<largest && array[i]>secondLargest){
-        secondLargest=array[i];
-    }
+// let array=[10,20,5,15,30];
+// let largest=array[0];
+// let secondLargest=array[0];
+// for(i=0;i<array.length;i++){
+//     if(array[i]>largest){
+//         secondLargest=largest;
+//         largest=array[i];
+//     }else if(array[i]<largest && array[i]>secondLargest){
+//         secondLargest=array[i];
+//     }
+// }
+// console.log("the second largest number is",secondLargest);
+
+//Question 51: Write a JavaScript program that checks whether two strings are anagrams of each other. Two strings are anagrams if they contain the same characters in the same frequency, but in any order. For example, "listen" and "silent" are anagrams.
+function areAnagrams(str1, str2) {
+    // Sort the characters of both strings and compare
+    return str1.split('').sort().join('') === str2.split('').sort().join('');
 }
-console.log("the second largest number is",secondLargest);
+
+let str1 = "listen";
+let str2 = "silent";
+
+if (areAnagrams(str1, str2)) {
+    console.log("The strings are anagrams.");
+} else {
+    console.log("The strings are not anagrams.");
+}
+
